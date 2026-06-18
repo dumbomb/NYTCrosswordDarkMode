@@ -3,7 +3,7 @@
 const resetPuzzleSVG = "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"21\" height=\"23\" " +
     "viewBox=\"0 0 21 23\"><path d=\"M18 9.5h-4C14 7.6 12.4 6 10.5 6S7 7.6 7 9.5H3C3 5.4 6.4 2 10.5 " +
     "2S18 5.4 18 9.5zM10.5 21C6.4 21 3 17.6 3 13.5h4c0 1.9 1.6 3.5 3.5 3.5s3.5-1.6 3.5-3.5h4c0 4.1-3" +
-    ".4 7.5-7.5 7.5zM4 20.5H1V12h8.5v3H4zM20 11h-8.5V8H17V2.5h3z\" fill=\"accentColor\"/></svg>";
+    ".4 7.5-7.5 7.5zM4 20.5H1V12h8.5v3H4zM20 11h-8.5V8H17V2.5h3z\" fill=\"textColor\"/></svg>";
 const settingsGearSVG = "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"23\" height=\"23\" " +
     "viewBox=\"0 0 23 23\"><path d=\"M7.522 19.014c.468.248.963.454 1.478.612v1.376c0 1.1.898 1.998 " +
     "2.005 1.998h.99c1.11 0 2.005-.894 2.005-1.998v-1.376c.515-.158 1.01-.364 1.478-.612l.973.973c.7" +
@@ -15,18 +15,30 @@ const settingsGearSVG = "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"23\" 
     ".478H2c-1.102 0-2 .898-2 2.005v.99C0 13.105.894 14 1.998 14h1.376c.158.515.364 1.01.612 1.478l-" +
     ".973.973c-.777.78-.778 2.05.005 2.84l.7.7c.786.79 2.05.79 2.83.01l.974-.97zM11.5 15c1.933 0 3.5" +
     "-1.567 3.5-3.5S13.433 8 11.5 8 8 9.567 8 11.5 9.567 15 11.5 15z\" fill-rule=\"evenodd\" " +
-    "fill=\"accentColor\"/></svg>";
-const pencilSVG = "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"23\" height=\"23\" " +
-    "viewBox=\"0 0.5 23 23\"><path fill=\"accentColor\" d=\"M3.2 15.3l5 5-7.8 2.8z\"/><path fill=\"mainColor\" " +
-    "d=\"M3.6 17.8l2.1 2.1L2.5 21z\"/><path fill=\"accentColor\" d=\"M8.172 20.28l-4.95-4.95L13.828 4.722l4.95 " +
-    "4.95zM17.4 1.2c.4-.4 1-.4 1.4 0l3.5 3.5c.4.4.4 1 0 1.4l-2.1 2.1-4.9-4.9 2.1-2.1z\"/></svg>";
-const pencilWhiteSVG = "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"23\" height=\"23\" " +
-    "viewBox=\"0 0.5 23 23\"><path d=\"M3.2 15.3l5 5-7.8 2.8zm.4 2.5l2.1 2.1L2.5 21zm4.572 2.48l-4.9" +
-    "5-4.95L13.828 4.722l4.95 4.95zM17.4 1.2c.4-.4 1-.4 1.4 0l3.5 3.5c.4.4.4 1 0 1.4l-2.1 2.1-4.9-4." +
-    "9 2.1-2.1z\" fill=\"mainColor\"/></svg>";
+    "fill=\"textColor\"/></svg>";
+// noinspection HtmlDeprecatedAttribute
+const pencilSVG = "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" " +
+    "viewBox=\"0 0 24 24\" fill=\"none\"><g clip-path=\"url(#clip0_5391_571)\">" +
+    "<path d=\"M16.8201 3.38C16.4801 3.04 15.9201 3.04 15.5801 3.38L12.8001 6.16L11.5601 7.4L3.38012 15.58C3.22012 " +
+    "15.74 3.12012 15.97 3.12012 16.2V20C3.12012 20.48 3.51012 20.88 4.00012 20.88H7.80012C8.03012 20.88 8.26012 " +
+    "20.79 8.42012 20.62L20.6201 8.42C20.9601 8.08 20.9601 7.52 20.6201 7.18L16.8201 3.38ZM7.44012 " +
+    "19.12H4.88012V16.56L12.8101 8.64L15.3701 11.2L7.45012 19.12H7.44012ZM16.6001 9.96L14.0401 7.4L16.2001 " +
+    "5.24L18.7601 7.8L16.6001 9.96Z\" fill=\"textColor\"/>" +
+    "</g><defs><clipPath id=\"clip0_5391_571\"><rect width=\"24\" height=\"24\" fill=\"mainColor\"/>" +
+    "</clipPath></defs></svg>";
 const infoSVG = "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"11\" height=\"21\" " +
     "viewBox=\"0 0 11 21\"><path d=\"M.5 16.987h3v-5.994h-3V6.996h7v9.99h3V21l-10-.004v-4.01zM3.5 " +
     "0h4v3.997h-4V0z\" fill=\"accentColor\" fill-rule=\"evenodd\"/></svg>";
+// noinspection HtmlUnknownAttribute
+const helpSVG = "<svg xmlns=\"http://www.w3.org/2000/svg\" height=\"28\" viewBox=\"4 4 24 24\" width=\"28\" " +
+    "className=\"game-icon\" data-testid=\"icon-help\"><path fill=\"textColor\" d=\"M14.8333 23H17.1666V20." +
+    "6667H14.8333V23ZM15.9999 4.33334C9.55992 4.33334 4.33325 9.56001 4.33325 16C4.33325 22.44 9.55992 27.6667 " +
+    "15.9999 27.6667C22.4399 27.6667 27.6666 22.44 27.6666 16C27.6666 9.56001 22.4399 4.33334 15.9999 " +
+    "4.33334ZM15.9999 25.3333C10.8549 25.3333 6.66659 21.145 6.66659 16C6.66659 10.855 10.8549 6.66668 15.9999 " +
+    "6.66668C21.1449 6.66668 25.3333 10.855 25.3333 16C25.3333 21.145 21.1449 25.3333 15.9999 25.3333ZM15.9999 " +
+    "9.00001C13.4216 9.00001 11.3333 11.0883 11.3333 13.6667H13.6666C13.6666 12.3833 14.7166 11.3333 15.9999 " +
+    "11.3333C17.2833 11.3333 18.3333 12.3833 18.3333 13.6667C18.3333 16 14.8333 15.7083 14.8333 19.5H17.1666C17.1666 " +
+    "16.875 20.6666 16.5833 20.6666 13.6667C20.6666 11.0883 18.5783 9.00001 15.9999 9.00001Z\"></path></svg>";
 const lifesaverWhiteSVG = "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"21\" height=\"21\" " +
     "viewBox=\"0 0.5 21 21\"><path fill=\"mainColor\" d=\"M10.5.5C4.7.5 0 5.2 0 11s4.7 10.5 10.5 10.5S21 16.8 21 " +
     "11 16.3.5 10.5.5zm4.9 2L19 6.1l-4.2 2.8-2.1-2.1 2.7-4.3zm-9.8 0l2.8 4.2-2.1 2.2L2 6.1l3.6-3.6zm0 17L2 15.9l4" +
@@ -59,6 +71,7 @@ const closeSVG = "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=
     "<title>Close Icon</title><g id=\"close\">" +
     "<path id=\"x\" d=\"M18.717 6.697l-1.414-1.414-5.303 5.303-5.303-5.303-1.414 1.414 5.303 5.303-5.303 5.303 " +
     "1.414 1.414 5.303-5.303 5.303 5.303 1.414-1.414-5.303-5.303z\" fill=\"textColor\"/></g></svg>"
+// noinspection HtmlDeprecatedAttribute
 const pauseSVG = "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"9\" height=\"12\" viewBox=\"0 0 9 12\" " +
     "fill=\"none\">" +
     // these aren't actually #000000 black, but it's close enough
@@ -135,7 +148,8 @@ const styleText = (options) => {
         }
 
         .xwd__cell--highlighted.xwd__cell--shaded .xwd__cell--guess {
-            text-shadow: -1px 0 ${blend(highlightedC, 65, shadedC)}, 0 1px ${blend(highlightedC, 65, shadedC)}, 1px 0 ${blend(highlightedC, 65, shadedC)}, 0 -1px ${blend(highlightedC, 65, shadedC)};
+            text-shadow: -1px 0 ${blend(highlightedC, 65, shadedC)}, 0 1px ${blend(highlightedC, 65, shadedC)},
+            1px 0 ${blend(highlightedC, 65, shadedC)}, 0 -1px ${blend(highlightedC, 65, shadedC)};
         }
 
         .xwd__cell--selected {
@@ -151,7 +165,8 @@ const styleText = (options) => {
         }
 
         .xwd__cell--selected.xwd__cell--shaded .xwd__cell--guess {
-            text-shadow: -1px 0 ${blend(selectedC, 65, shadedC)}, 0 1px ${blend(selectedC, 65, shadedC)}, 1px 0 ${blend(selectedC, 65, shadedC)}, 0 -1px ${blend(selectedC, 65, shadedC)};
+            text-shadow: -1px 0 ${blend(selectedC, 65, shadedC)}, 0 1px ${blend(selectedC, 65, shadedC)},
+            1px 0 ${blend(selectedC, 65, shadedC)}, 0 -1px ${blend(selectedC, 65, shadedC)};
         }
 
         .xwd__cell--related {
@@ -335,10 +350,19 @@ const styleText = (options) => {
         /* Modals/CongratsModal/CongratsModal.scss */
         /* rules combined since they're all the same */
         .xwd__congrats-modal--homeDelivery_main,
-        /*.xwd__congrats-modal--streakLength,*/ /* this should actually stay black since it's on a background of gold */
+            /*.xwd__congrats-modal--streakLength,*/ /* this should actually stay black since it's on a background of gold */
         .xwd__congrats-modal--content,
-        .mini__congrats-modal--content {
+        .mini__congrats-modal--content,
+        .xwd__modal--close {
             color: ${textC};
+        }
+
+        .xwd__modal--close:hover {
+            color: ${blend(textC, 80, mainC)};
+        }
+        
+        .xwd__congrats-moment {
+            background-color: ${mainC} !important;
         }
 
         /* Modals/PrintOptionsModal/PrintOptionsModal.scss */
@@ -423,8 +447,33 @@ const styleText = (options) => {
             }
         }
 
-        .xwd__menu--container {
+        .xwd__menu--container,
+        .xwd__support-menu {
             border-color: ${blend(mainC, 90, textC)};
+            background-color: ${mainC};
+            color: ${textC};
+        }
+
+        .xwd__support-menu .xwd__menu--item {
+            background: ${mainC};
+        }
+
+        .xwd__support-menu .xwd__menu--item:hover {
+            background-color: ${blend(mainC, 95, textC)};
+        }
+        
+        .xwd__menu--item {
+            background-color: ${blend(mainC, 98, textC)};
+            border-top-color: ${blend(mainC, 90, textC)};
+            color: ${textC};
+        }
+
+        .xwd__menu--item a {
+            color: ${textC};
+        }
+
+        [data-testid="icon-arrow"] path {
+            fill: ${textC} !important;
         }
 
         /* Toolbar/Tool/Tool.scss */
@@ -436,16 +485,17 @@ const styleText = (options) => {
             background-image: url('${svgUrl(settingsGearSVG)}');
         }
 
-        .xwd__toolbar_icon--pencil {
-            background-image: url('${svgUrl(pencilSVG)}');
-        }
-
+        .xwd__toolbar_icon--pencil,
         .xwd__toolbar_icon--pencil-active {
-            background-image: url('${svgUrl(pencilWhiteSVG)}');
+            background-image: url('${svgUrl(pencilSVG)}');
         }
 
         .xwd__toolbar_icon--info {
             background-image: url('${svgUrl(infoSVG)}');
+        }
+
+        .xwd__toolbar_icon--support {
+            background-image: url('${svgUrl(helpSVG)}');
         }
 
         .xwd__toolbar_icon--cheat-menu-active {
@@ -472,11 +522,11 @@ const styleText = (options) => {
 
         .xwd__tool--autocheck,
         .xwd__tool--active {
-            background-color: ${accentC};
+            background-color: ${pencilC};
             color: ${mainC};
 
             :hover {
-                background-color: ${accentC};
+                background-color: ${pencilC};
                 color: ${mainC};
             }
         }
@@ -562,6 +612,20 @@ const styleText = (options) => {
         .pz-game-field {
             background: ${mainC};
             color: ${textC};
+        }
+
+        .xwd__toolbar--wrapper {
+            background-color: ${mainC} !important;
+        }
+
+        /* override css variables */
+        :root {
+            --bg-page: ${mainC} !important;
+            --bg-moment: ${mainC} !important;
+        }
+        
+        [class*="ToolbarAdapter"] {
+            border-color: ${blend(mainC, 90, textC)};
         }
 
         .pz-toolbar-button {
@@ -668,7 +732,7 @@ const styleText = (options) => {
 
         /* foundation-game/moments.scss */
         .pz-moment {
-            color: ${textC};
+            /*color: ${textC};*/
         }
 
         .pz-moment__button {
