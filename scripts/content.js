@@ -88,7 +88,7 @@ const styleText = (options) => {
     const clueBarC = options.clueBarBackgroundColor;
     const cellC = options.cellColor;
     const cellTextC = options.cellTextColor;
-    const cellCheckedText = options.cellCheckedTextColor;
+    const cellCheckTextC = options.cellCheckTextColor;
     // const pencilC = `color-mix(in srgb, ${mainC} 58%, ${textC})`;
     const pencilC = blend(mainC, 58, textC);
     const blockC = options.blockCellColor;
@@ -219,7 +219,7 @@ const styleText = (options) => {
 
         .xwd__assistance--confirmed {
             ~ text:last-of-type {
-                fill: ${cellCheckedText};
+                fill: ${cellCheckTextC};
             }
         }
 
