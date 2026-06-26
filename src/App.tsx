@@ -223,7 +223,7 @@ function App() {
             <div className="PopupOption">
               <input type="color" value={colorOptions.cellCheckTextColor}
                      onChange={(e) => setColorOptions({...colorOptions, cellCheckTextColor: e.target.value})}/>
-              <span className="PopupColorLabel">Cell Text Color</span>
+              <span className="PopupColorLabel">Cell Check Text Color</span>
             </div>
 
             <div className="PopupOption">
